@@ -1,0 +1,12 @@
+  *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: red;
+            height: 400px;
+            width: 500px;
+            display: grid;grid-template-columns: 50px 50px;
+        }
