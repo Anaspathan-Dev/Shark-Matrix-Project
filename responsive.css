@@ -1,454 +1,1582 @@
-/* Responsive Styles */
+/* RESPONSIVE MEDIA QUERIES */
 
-
-@media screen and (max-width: 1300){
-    footer{
+/* Large devices (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .main-nav {
+        padding: 15px 50px;
+    }
+    
+    .top-nav .menu-items {
+        margin: 0 50px;
+        gap: 25px;
+    }
+    
+    .page-header__content {
+        padding: 100px 50px;
+    }
+    
+    .page-header__title {
+        font-size: 52px;
+    }
+    
+    .breadcrumb__item {
+        font-size: 17px;
+    }
+    
+    .container {
+        padding: 50px 30px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .col-xl-4 {
+        width: 100%;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+    
+    .card-title {
+        font-size: 22px;
+    }
+    
+    .pagination-container {
+        padding: 0 30px 50px;
+    }
+    
+    .pagination {
+        gap: 8px;
+    }
+    
+    .page-link {
+        padding: 12px 18px;
+        font-size: 15px;
+        min-width: 48px;
+        height: 48px;
+    }
+    
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        padding: 12px 24px;
+    }
+    
+    .testimonials {
+        padding: 60px 40px;
+    }
+    
+    .testimonials-title {
+        font-size: 32px;
+    }
+    
+    
+    .arrow {
+        margin: 0 150px;
+    }
+    
+    .form {
+        padding: 10px 200px;
+    }
+    
+    .main {
+        padding: 100px;
+    }
+    
+    .accordion {
+        padding: 10px 200px;
+    }
+    
+    .faq>h2 {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    
+    .accordion-body {
+        padding: 16px 110px;
+    }
+    
+    .number {
+        font-size: xx-large;
+        margin-right: 30px;
+    }
+    
+    footer {
+        height: 367px;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        /* height: auto; */
+    }
+    
+    .fut {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ftr {
+        width: 300px;
+        margin-left: -120px;
     }
 }
-@media screen and (max-width: 1290px) {
-    .container {
-        max-width: 95%;
-        padding: 0 15px;
+
+/* Medium devices (tablets, 992px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    /* Testimonial fixes for 992px */
+    .same {
+        padding: 30px 20px;
+        height: auto;
+        min-height: 400px;
+        width: 100%;
+        /* max-width: 360px; */
+        margin: 0 auto;
+    }
+    
+    .testimonial-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 
-    .second {
-        justify-content: center;
+    .user-info {
+        width: 100%;
+    }
+
+    .star-rating {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 5px;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial-title {
+        font-size: 18px;
+        margin: 15px 0;
+        text-align: left;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        padding: 0;
+        margin-top: 10px;
+        text-align: left;
+        line-height: 1.6;
+    }
+    .main-nav {
+        padding: 15px 30px;
     }
     
-    .second ul {
-        margin-right: 0;
+    .top-nav .menu-items {
+        margin: 0 30px;
         gap: 20px;
-        flex-wrap: wrap;
-        padding: 10px 15px;
-        height: auto;
     }
     
-    .logo-nav {
-        justify-content: space-between;
+    .main-nav .nav-items {
+        gap: 15px;
+    }
+    
+    .page-header {
+        height: 350px;
+    }
+    
+    .page-header__content {
+        padding: 70px 40px;
+    }
+    
+    .page-header__title {
+        font-size: 42px;
+    }
+    
+    .breadcrumb__item {
+        font-size: 15px;
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        margin: 0 12px;
+    }
+    
+    .container {
+        padding: 40px 25px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .col-lg-4 {
+        width: 100%;
+    }
+    
+    .card-img-top {
+        height: 230px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    
+    .pagination-container {
+        padding: 0 25px 40px;
+    }
+    
+    .pagination {
+        gap: 6px;
+    }
+    
+    .page-link {
+        padding: 10px 16px;
+        font-size: 14px;
+        /* min-width: 44px; */
+        height: 44px;
+    }
+    
+    .testimonials {
+        padding: 50px 30px;
+    }
+    
+    .testimonials-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    
+  
+    
+    .arrow {
+        margin: 0 100px;
+    }
+    
+    .testimonial-text {
         padding: 0 20px;
-        position: relative;
     }
     
-    .logo-nav ul {
+    .form {
+        padding: 10px 100px;
+    }
+    
+    .main {
+        padding: 80px;
+    }
+    
+    .main h1 {
+        font-size: 26px;
+    }
+    
+    .main p {
+        font-size: 14px;
+    }
+    
+    input {
+        padding: 14px;
+    }
+    
+    .next {
+        gap: 25px;
+    }
+    
+    .btn {
+        padding: 14px 0;
+        font-size: 15px;
+    }
+    
+    .info {
+        margin-top: 35px;
+    }
+    
+    .accordion {
+        padding: 10px 150px;
+    }
+    
+    .faq>h2 {
+        margin-top: 45px;
+        margin-bottom: 90px;
+        font-size: 26px;
+    }
+    
+    .accordion-body {
+        padding: 16px 80px;
+    }
+    
+    .accordion-header {
+        padding: 18px;
+    }
+    
+    .number {
+        font-size: x-large;
+        margin-right: 25px;
+    }
+    
+    .question {
+        font-size: 16px;
+    }
+    
+    footer {
+        height: 350px;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+    
+    .fut {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .ftr {
+        width: 250px;
+        margin-left: 0;
+    }
+    
+    .ftr-logo {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+    
+    .fut .first {
+        margin-bottom: 50px;
+        font-size: 12px;
+    }
+    
+    input[placeholder="Enter your email"] {
+        width: 200px;
+        height: 40px;
+    }
+    
+    .partner {
+        width: 280px;
+        margin: 40px 0 0 0;
+    }
+    
+    .subscribe {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Small devices (landscape phones, 768px to 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .main-nav .nav-items {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #F8F8F8;
+        background-color: white;
         flex-direction: column;
-        gap: 0;
-        padding: 20px 0;
+        padding: 20px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         z-index: 1000;
+        gap: 15px;
     }
-    
-    .logo-nav ul.active {
+
+    .main-nav .nav-items.show {
         display: flex;
     }
-    
-    .logo-nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    .logo-nav ul li a {
-        display: block;
-        padding: 10px 0;
-    }
-    
+
     .mobile-menu-btn {
         display: block;
     }
 
-    .cont p, .cont h3 {
-        left: 50%;
-        transform: translateX(-50%);
-        width: fit-content;
-    }
-
-    /* Form responsiveness */
-    .form {
-        padding: 30px 5%;
-        margin: 20px 0;
-    }
-
-    .main {
-        padding: 30px 20px;
-        background: #f8f8f8;
-        border-radius: 10px;
-    }
-
-    .main h1 {
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .main p {
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        padding: 0 10px;
-    }
-
-    .info {
-        gap: 15px;
-    }
-
-    .info input, .info select {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .next {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .next input {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .submit-btn {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    /* Testimonial responsiveness */
-    .testimonials {
-        padding: 30px 15px !important;
-    }
-
-    .testimonials h2 {
-        font-size: 24px !important;
-        margin-bottom: 30px !important;
-    }
-
-    .same {
-        padding: 20px 15px;
-        margin: 10px;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .same .user-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .same img {
-        width: 40px !important;
-        height: 40px !important;
-    }
-
-    .same .name {
-        margin-right: 0 !important;
-        font-size: 16px;
-    }
-
-    .same .passion {
-        font-size: 12px !important;
-    }
-
-    .same h5 {
-        font-size: 18px !important;
-        margin: 15px 0 !important;
-    }
-
-    .same p {
-        font-size: 13px !important;
-        padding: 0 15px !important;
-        text-align: left !important;
-    }
-
-    .swiper-pagination {
-        position: relative;
-        margin-top: 20px;
-    }
-
-    /* Footer responsiveness */
-    footer {
-        padding: 40px 20px;
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .fut {
-        width: 100%;
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .fut .ftr {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-container {
-        margin-left: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    /* Accordion responsiveness */
-    .accordion {
-        padding: 10px 5%;
-    }
-
-    .accordion-body {
-        padding: 16px 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .top {
-        font-size: 0.8rem;
-        height: auto;
-        padding: 10px 5px;
-        text-align: center;
-    }
-
-    .second ul {
-        gap: 10px;
-        font-size: 0.8rem;
-    }
-
-    .logo img {
-        width: 180px !important;
-    }
-
-    /* Webinar cards responsiveness */
-    .card {
-        margin-bottom: 20px;
-    }
-
-    .css-tabs .tab-labels {
-        flex-wrap: wrap;
+    .top-nav .menu-items {
         justify-content: center;
-    }
-
-    .css-tabs .tab-labels label {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    .dist {
-        margin: 2px;
-        padding: 3px 8px;
-        font-size: 12px;
-    }
-
-    .card-title {
-        font-size: 16px;
-        margin: 15px 0;
-    }
-
-    .watch-now {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* Form responsiveness */
-    .info {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .info h5 {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .top {
-        font-size: 0.7rem;
-        flex-direction: column;
-        padding: 10px 5px;
-    }
-
-    .top span {
-        display: inline-block;
-        margin: 5px auto;
-    }
-
-    .second {
-        height: auto;
+        gap: 15px;
     }
     
-    .second ul {
-        flex-direction: column;
-        gap: 5px;
-        padding: 10px 0;
-    }
-
-    .logo img {
-        width: 150px !important;
-    }
-
-    /* Card adjustments for mobile */
-    .card-img-top {
-        height: 180px;
-    }
-
-    .card-body {
-        padding: 15px;
-    }
-
-    .state {
-        font-size: 12px;
-        padding: 3px 8px;
-    }
-
-    /* Form adjustments */
-    .form {
-        padding: 20px 15px;
-    }
-
-    .main {
-        padding: 20px 15px;
-    }
-
-    .main h1 {
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-
-    .main p {
+    .alert {
         font-size: 13px;
-        padding: 0;
-        margin-bottom: 20px;
     }
-
-    .info, .next {
-        margin-bottom: 0;
+    
+    .page-header {
+        height: 300px;
     }
-
-    .info input, .info select, .next input {
-        padding: 10px;
-        font-size: 14px;
-        margin-bottom: 10px;
+    
+    .page-header__content {
+        padding: 60px 30px;
     }
-
-    .submit-btn {
+    
+    .page-header__title {
+        font-size: 36px;
         margin-top: 15px;
-        padding: 10px;
+    }
+    
+    .breadcrumb__item {
+        font-size: 14px;
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        margin: 0 10px;
+        width: 5px;
+        height: 5px;
+    }
+    
+    .container {
+        padding: 35px 20px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .col-md-6 {
+        width: 100%;
+    }
+    
+    .card-img-top {
+        height: 220px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .nav-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .nav-link {
+        padding: 10px 18px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .pagination-container {
+        padding: 0 20px 35px;
+        justify-content: center;
+    }
+    
+    .pagination {
+        gap: 5px;
+    }
+    
+    .page-link {
+        padding: 8px 14px;
+        font-size: 14px;
+        min-width: 40px;
+        height: 40px;
+    }
+    
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        padding: 8px 16px;
+    }
+    
+    .testimonials {
+        padding: 40px 20px;
+    }
+    
+    .testimonials-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .swiper-slide {
+        opacity: 0.7;
+        transform: scale(0.9);
+    }
+    
+    .swiper-slide-active {
+        transform: scale(1);
+    }
+    
+    .same {
+        scale: 0.85;
+        padding: 30px 20px;
+    }
+    
+    .swiper-slide-active .same {
+        scale: 1;
+    }
+    
+    .arrow {
+        margin: 0 80px;
+    }
+    
+    .testimonial-header {
+        padding: 0 0 0 15px;
+    }
+    
+    .testimonial-title {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+    
+    .testimonial-text {
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    
+    .form {
+        padding: 10px 60px;
+    }
+    
+    .main {
+        padding: 60px;
+    }
+    
+    .main h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .main p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    input {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .next {
+        gap: 20px;
+    }
+    
+    .btn {
+        margin-top: 35px;
+        padding: 12px 0;
         font-size: 15px;
     }
-
-    /* Testimonial adjustments for mobile */
-    .testimonials {
-        padding: 20px 10px !important;
+    
+    .info {
+        margin-top: 30px;
+        gap: 20px;
     }
-
-    .testimonials h2 {
-        font-size: 20px !important;
-        margin-bottom: 20px !important;
-    }
-
-    .same {
-        padding: 15px 10px;
-        margin: 5px;
-    }
-
-    .same img {
-        width: 35px !important;
-        height: 35px !important;
-    }
-
-    .same .name {
+    
+    .info h5 {
         font-size: 14px;
     }
-
-    .same .passion {
-        font-size: 11px !important;
+    
+    .info p {
+        font-size: 13px;
     }
-
-    .same h5 {
-        font-size: 16px !important;
-        margin: 12px 0 !important;
+    
+    .accordion {
+        padding: 10px 100px;
     }
-
-    .same p {
-        font-size: 12px !important;
-        padding: 0 10px !important;
-        line-height: 1.4 !important;
+    
+    .faq>h2 {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        font-size: 24px;
     }
-
-    /* Footer adjustments */
-    .fut ul {
-        padding: 0;
+    
+    .accordion-body {
+        padding: 16px 60px;
+    }
+    
+    .accordion-header {
+        padding: 16px;
+    }
+    
+    .number {
+        font-size: large;
+        margin-right: 20px;
+    }
+    
+    .question {
+        font-size: 15px;
+    }
+    
+    .accordion-body {
+        font-size: 14px;
+    }
+    
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px 20px;
+    }
+    
+    .fut {
+        width: 45%;
+        height: auto;
+        margin-bottom: 30px;
         text-align: center;
     }
-
+    
+    .ftr {
+        width: 45%;
+        margin-left: 0;
+    }
+    
+    .ftr-logo {
+        width: 180px;
+        margin-bottom: 15px;
+    }
+    
+    .fut .first {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    
+    .fut ul li {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    
+    input[placeholder="Enter your email"] {
+        width: 180px;
+        height: 38px;
+        margin-right: 8px;
+        font-size: 13px;
+    }
+    
     .partner {
-        width: 100%;
-        height: auto;
+        width: 250px;
+        margin: 30px 0 0 0;
     }
-
-    /* Adjust swiper for mobile */
-    .swiper-slide {
-        padding: 5px;
+    
+    .subscribe {
+        padding: 8px 15px;
+        font-size: 12px;
     }
-
-    .swiper-pagination {
-        margin-top: 15px;
-    }
-
-    .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
+    
+    .social-icons {
+        justify-content: center;
     }
 }
 
-/* @media (max-width:768px) {
-    .logo-nav {
+/* Extra small devices (phones, less than 768px) */
+@media screen and (max-width: 767px) {
+    .alert {
+        font-size: 12px;
+        padding: 6px 10px;
         flex-direction: column;
-        height: 120px;
-        padding: 10px 0;
+        gap: 5px;
     }
 
-    .logo-nav ul {
+    .alert span {
+        font-size: 10px;
+        padding: 2px 6px;
+        margin: 0 3px;
+    }
+
+    .top-nav {
+        padding: 8px 0;
+    }
+
+    .top-nav .menu-items {
+        gap: 10px;
+        margin: 0 10px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .top-nav .menu-items a {
+        font-size: 12px;
+    }
+
+    .top-nav .consulting {
+        padding: 3px 10px;
+    }
+
+    .main-nav {
+        padding: 10px 15px;
+    }
+
+    .main-nav .logo img {
+        height: 30px;
+    }
+
+    .main-nav .nav-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        gap: 12px;
+    }
+
+    .main-nav .nav-items.show {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .main-nav .nav-items a {
+        font-size: 14px;
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-btn {
+        padding: 10px 20px;
+    }
+    
+    .page-header {
+        height: 250px;
+    }
+    
+    .page-header__content {
+        padding: 40px 20px;
+    }
+    
+    .page-header__title {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    
+    .breadcrumb__item {
+        font-size: 13px;
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        width: 5px;
+        height: 5px;
+        margin: 0 8px;
+    }
+    
+    .breadcrumb__list {
+        justify-content: center;
+    }
+    
+    .container {
+        padding: 30px 15px;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-body {
+        padding: 18px;
+    }
+    
+    .card-title {
+        font-size: 18px;
+    }
+    
+    .card-text {
+        font-size: 14px;
+    }
+    
+    .nav-tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .nav-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .nav-link {
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid #e9ecef;
         margin: 0;
-        padding: 0;
+    }
+    
+    .nav-link.active {
+        border-bottom: 1px solid #e9ecef;
+        border-bottom: 3px solid #95c11f;
+    }
+    
+    .dist {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .date {
+        font-size: 13px;
+    }
+    
+    .watch-now {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .pagination-container {
+        padding: 0 15px 30px;
+        justify-content: center;
+    }
+    
+    .pagination {
+        gap: 4px;
+        justify-content: center;
+    }
+    
+    .page-link {
+        padding: 8px 12px;
+        font-size: 13px;
+        min-width: 38px;
+        height: 38px;
+    }
+    
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+    
+    /* Hide some page numbers on very small screens */
+    .page-item:nth-child(3),
+    .page-item:nth-child(4) {
+        display: none;
+    }
+    
+    .testimonials {
+        padding: 30px 15px;
+    }
+    
+    .testimonials-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .swiper-wrapper {
+        margin: 30px 0;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transform: scale(1);
+        text-overflow: hidden;
+    }
+    
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        opacity: 0.6;
+        transform: scale(0.95);
+    }
+    
+    .same {
+      
+        scale: 0.9;
+        padding: 30px 8px;
+    }
+    
+    .swiper-slide-active .same {
+        scale: 1;
+    }
+    
+    .arrow {
+        margin: 0 50px;
+        display: none; /* Hide arrows on mobile */
+    }
+    
+    .testimonial-header {
+        padding: 0 0 0 12px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .user-info {
+        width: 100%;
+    }
+    
+    .star-rating {
+        align-self: flex-start;
+    }
+    
+    .testimonial-title {
+        padding: 0 12px;
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    
+    .testimonial-text {
+        padding: 0 16px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    .user-avatar {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .name {
+        font-size: 14px;
+    }
+    
+    .passion {
+        font-size: 11px;
+    }
+    
+    .form {
+        padding: 10px 30px;
+    }
+    
+    .main {
+        padding: 40px 30px;
+    }
+    
+    .main h1 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    .main p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    input {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .next {
+        display: block;
+        gap: 0;
+    }
+    
+    .next input {
+        width: 100%;
+    }
+    
+    input[placeholder="Message"] {
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        margin-top: 30px;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+    
+    .info {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .info h5 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .info p {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+    
+    .accordion {
+        padding: 10px 50px;
+    }
+    
+    .faq>h2 {
+        margin-top: 35px;
+        margin-bottom: 60px;
+        font-size: 22px;
+        padding: 0 20px;
+    }
+    
+    .accordion-body {
+        padding: 16px 30px;
+    }
+    
+    .accordion-header {
+        padding: 15px;
+    }
+    
+    .number {
+        font-size: medium;
+        margin-right: 15px;
+    }
+    
+    .question {
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    .accordion-body {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .accordion-button {
+        padding: 15px;
+    }
+    
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    
+    .fut {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+        text-align: center;
+        max-width: 300px;
+    }
+    
+    .ftr {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .ftr-logo {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+    
+    .fut .first {
+        margin-bottom: 20px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+    
+    .follow {
+        margin-bottom: 10px;
+    }
+    
+    .fut ul li {
+        margin: 6px 0;
+        font-size: 14px;
+    }
+    
+    .fut ul li:first-child {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    input[placeholder="Enter your email"] {
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .last {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .partner {
+        width: 200px;
+        margin: 25px 0 0 0;
+    }
+    
+    .subscribe {
+        padding: 10px 25px;
+        font-size: 13px;
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .social-icons {
+        justify-content: center;
         gap: 20px;
     }
+}
 
-    .second ul {
-        margin-right: 20px;
-        gap: 20px;
+/* Very small devices (phones, less than 480px) */
+@media screen and (max-width: 479px) {
+    .top-nav .menu-items a {
+        font-size: 11px;
     }
-
+    
+    .top-nav .consulting {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    
+    .alert {
+        font-size: 11px;
+    }
+    
+    .main-nav {
+        padding: 8px 10px;
+    }
+    
+    .main-nav .logo img {
+        height: 25px;
+    }
+    
+    .page-header {
+        height: 200px;
+    }
+    
+    .page-header__content {
+        padding: 30px 15px;
+    }
+    
+    .page-header__title {
+        font-size: 24px;
+    }
+    
+    .breadcrumb__item {
+        font-size: 12px;
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        width: 4px;
+        height: 4px;
+        margin: 0 6px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    
+    .dist {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+    
+    .card-title {
+        font-size: 14px;
+    }
+    
+    .card-text {
+        font-size: 12px;
+    }
+    
+    .pagination-container {
+        padding: 0 10px 25px;
+    }
+    
+    .pagination {
+        gap: 3px;
+    }
+    
+    .page-link {
+        padding: 6px 10px;
+        font-size: 12px;
+        min-width: 36px;
+        height: 36px;
+    }
+    
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    /* Show only essential items */
+    .page-item:nth-child(2),
+    .page-item:nth-child(5) {
+        display: none;
+    }
+    
+    /* Show ellipsis for hidden pages */
+    .page-item:nth-child(3) {
+        display: list-item;
+    }
+    
+    .page-item:nth-child(3) .page-link {
+        background: transparent;
+        border: none;
+        cursor: default;
+    }
+    
+    .page-item:nth-child(3) .page-link:hover {
+        transform: none;
+        background: transparent;
+        border: none;
+    }
+    
+    .testimonials {
+        padding: 20px 10px;
+    }
+    
+    .testimonials-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .same {
+        scale: 0.95;
+        padding: 25px 5px;
+    }
+    
+    .swiper-slide-active .same {
+        scale: 1;
+    }
+    
+    .testimonial-header {
+        padding: 0 0 0 10px;
+    }
+    
+    .testimonial-title {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    
+    .testimonial-text {
+        padding: 0 12px;
+        font-size: 12px;
+    }
+    
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .swiper-pagination {
+        gap: 8px;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    
     .form {
         padding: 10px 20px;
     }
-
+    
     .main {
-        padding: 50px 20px;
+        padding: 30px 20px;
     }
+    
+    .main h1 {
+        font-size: 20px;
+    }
+    
+    .main p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    input[placeholder="Message"] {
+        margin-bottom: 25px;
+    }
+    
+    .btn {
+        margin-top: 25px;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    
+    .info {
+        margin-top: 25px;
+        gap: 15px;
+    }
+    
+    .info h5 {
+        font-size: 13px;
+    }
+    
+    .info p {
+        font-size: 12px;
+    }
+    
+    .accordion {
+        padding: 10px 30px;
+    }
+    
+    .faq>h2 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        padding: 0 15px;
+    }
+    
+    .accordion-body {
+        padding: 14px 20px;
+    }
+    
+    .accordion-header {
+        padding: 12px;
+    }
+    
+    .number {
+        font-size: small;
+        margin-right: 12px;
+    }
+    
+    .question {
+        font-size: 13px;
+    }
+    
+    .accordion-body {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .accordion-button {
+        padding: 12px;
+    }
+    
+    footer {
+        padding: 25px 15px;
+    }
+    
+    .fut {
+        margin-bottom: 20px;
+        max-width: 280px;
+    }
+    
+    .ftr-logo {
+        width: 180px;
+    }
+    
+    .fut .first {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+    
+    .fut ul li {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+    
+    input[placeholder="Enter your email"] {
+        height: 38px;
+        font-size: 12px;
+        max-width: 220px;
+    }
+    
+    .partner {
+        width: 180px;
+        margin: 20px 0 0 0;
+    }
+    
+    .subscribe {
+        padding: 8px 20px;
+        font-size: 12px;
+        max-width: 220px;
+    }
+    
+    .social-icons {
+        gap: 15px;
+    }
+    
+    .social-icons i {
+        font-size: 16px;
+    }
+}
 
+/* Extra small devices (phones, less than 360px) */
+@media screen and (max-width: 359px) {
+    .page-header {
+        height: 180px;
+    }
+    
+    .page-header__content {
+        padding: 25px 10px;
+    }
+    
+    .page-header__title {
+        font-size: 20px;
+    }
+    
+    .breadcrumb__list {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .breadcrumb__item:not(:last-child)::before {
+        content: ">";
+        margin: 0 5px;
+        color: #95c11f;
+    }
+    
+    .pagination {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 10px 0;
+        justify-content: flex-start;
+    }
+    
+    .page-link {
+        white-space: nowrap;
+    }
+    
+    .page-item:first-child .page-link span,
+    .page-item:last-child .page-link span {
+        display: none;
+    }
+    
+    .page-item:first-child .page-link::after {
+        content: "Prev";
+    }
+    
+    .page-item:last-child .page-link::before {
+        content: "Next";
+    }
+    
+    .page-item:first-child .page-link i,
+    .page-item:last-child .page-link i {
+        display: none;
+    }
+    
+    
+    .testimonial-text {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+    
+    .testimonial-title {
+        font-size: 15px;
+    }
+    
+    .user-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .name {
+        font-size: 13px;
+    }
+    
+    .passion {
+        font-size: 10px;
+    }
+    
+    .star-rating {
+        font-size: 12px;
+    }
+    
+    .form {
+        padding: 10px 15px;
+    }
+    
+    .main {
+        padding: 25px 15px;
+    }
+    
+    .main h1 {
+        font-size: 18px;
+    }
+    
+    .main p {
+        font-size: 12px;
+    }
+    
+    input {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .btn {
+        padding: 8px 0;
+        font-size: 13px;
+    }
+    
+    .info h5 {
+        font-size: 12px;
+    }
+    
+    .info p {
+        font-size: 11px;
+    }
+    
     .accordion {
         padding: 10px 20px;
     }
-
-    .accordion-body {
-        padding: 16px 20px;
+    
+    .faq>h2 {
+        margin-top: 25px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        padding: 0 10px;
     }
-} */
+    
+    .accordion-body {
+        padding: 12px 15px;
+    }
+    
+    .accordion-header {
+        padding: 10px;
+    }
+    
+    .number {
+        font-size: x-small;
+        margin-right: 10px;
+    }
+    
+    .question {
+        font-size: 12px;
+    }
+    
+    .accordion-body {
+        font-size: 11px;
+    }
+    
+    .accordion-button {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 20px 10px;
+    }
+    
+    .fut {
+        max-width: 260px;
+    }
+    
+    .ftr-logo {
+        width: 160px;
+    }
+    
+    input[placeholder="Enter your email"] {
+        max-width: 200px;
+        height: 36px;
+    }
+    
+    .partner {
+        width: 160px;
+    }
+    
+    .subscribe {
+        max-width: 200px;
+        padding: 7px 15px;
+    }
+    
+    .info h5 {
+        font-size: 12px;
+    }
+    
+    .info p {
+        font-size: 11px;
+    }
+}
