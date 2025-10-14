@@ -453,6 +453,11 @@
 
 /* TESTIMONIALS SECTION STYLES */
 /* TESTIMONIALS SECTION STYLES */
+
+
+
+
+
 .testimonials {
     padding: 50px 20px;
     text-align: center;
@@ -568,7 +573,7 @@
 
 .testimonial-up {
     display: flex;
-     gap: 10px;
+    gap: 10px;
 }
 
 
@@ -577,7 +582,10 @@
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 35px 25px; 
+    /* padding: 35px 25px;
+     */
+     padding: 35px;
+    width: 400px;
     transition: all 0.3s ease;
     width: 100%;
     min-height: 420px;
@@ -631,6 +639,12 @@
     font-size: 13px;
     margin: 0;
     line-height: 1.3;
+}
+
+.star {
+    color: #FFA500;
+    display: flex;
+    justify-content: start;
 }
 
 .star-rating {
